@@ -4,17 +4,17 @@
  */
 package book2_chap02;
 
-import java.util.Scanner;
 /**
  *
  * @author Jada
  */
-public class ScannerApp {
-    static Scanner sc = new Scanner(System.in);
+public class EnumTest {
+    public enum CardSuit {HEARTS, SPADES, CLUBS, DIAMONDS};
+    
     public static void main(String[] args) {
-        System.out.println("Enter an integer: ");
-        //allows for inputs
-        int x = sc.nextInt();
-        System.out.println("You entered " + x + ".");
+        CardSuit suit;
+        //choosing value
+        suit = CardSuit.DIAMONDS;
+        System.out.println("The suit is " + suit);
     }
 }

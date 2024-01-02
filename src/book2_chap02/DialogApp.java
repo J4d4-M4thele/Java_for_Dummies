@@ -4,17 +4,18 @@
  */
 package book2_chap02;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jada
  */
-public class ScannerApp {
-    static Scanner sc = new Scanner(System.in);
+public class DialogApp {
     public static void main(String[] args) {
-        System.out.println("Enter an integer: ");
-        //allows for inputs
-        int x = sc.nextInt();
+        String s;
+        //shows dialogue box as an alert to enter info
+        s = JOptionPane.showInputDialog("Enter an Integer: ");
+        int x = Integer.parseInt(s);
         System.out.println("You entered " + x + ".");
     }
 }
