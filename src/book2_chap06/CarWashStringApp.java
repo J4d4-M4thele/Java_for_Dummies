@@ -10,32 +10,26 @@ import java.util.Scanner;
  *
  * @author Jada
  */
-public class CarWashApp {
+public class CarWashStringApp {
 
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("The car wash application!\n\n");
+        System.out.println("The car wash application\n\n");
         System.out.print("Enter the package code: ");
         String s = sc.next();
-        char p = s.charAt(0);
+
         String details = "";
-        switch (p) {
-            case 'E':
-            case 'e':
+        switch (s.toUpperCase()) {
+            case "PRESIDENTIAL":
                 details += "\tNew Car Scent, plus ... \n";
-            case 'D':
-            case 'd':
+            case "ELITE":
                 details += "\tTire Treatment, plus ... \n";
-            case 'C':
-            case 'c':
-                details
-                        += "\tLeather/Vinyl Treatment, plus ... \n";
-            case 'B':
-            case 'b':
+            case "DELUXE":
+                details += "\tLeather/Vinyl Treatment, plus ... \n";
+            case "SUPER":
                 details += "\tWax, plus ... \n";
-            case 'A':
-            case 'a':
+            case "STANDARD":
                 details += "\tWash, vacuum, and hand dry.\n";
                 break;
             default:
