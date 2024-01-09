@@ -9,49 +9,59 @@ package book3_chap02;
  * @author Jada
  */
 public class Actor {
+
     private String firstName;
     private String lastName;
     private boolean isGoodActor;
 
-    /**
-     * @return the firstName
-     */
     public String getFirstName() {
         return firstName;
     }
 
-    /**
-     * @param firstName the firstName to set
-     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    /**
-     * @return the lastName
-     */
     public String getLastName() {
         return lastName;
     }
 
-    /**
-     * @param lastName the lastName to set
-     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    /**
-     * @return the isGoodActor
-     */
-    public boolean isIsGoodActor() {
+    public boolean isGoodActor() {
         return isGoodActor;
     }
 
-    /**
-     * @param isGoodActor the isGoodActor to set
-     */
-    public void setIsGoodActor(boolean isGoodActor) {
-        this.isGoodActor = isGoodActor;
+    public void printObject() {
+        System.out.println(this);
     }
+
+    public void setGoodActor(boolean goodActor) {
+        this.isGoodActor = goodActor;
+    }
+
+    public Actor(String firstName, String lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Actor(String first, String last, boolean good)
+    {
+        this.firstName = first;
+        this.lastName = last;
+        this.isGoodActor = good;
+    }
+
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", isGoodActor=" + isGoodActor +
+                '}';
+    }
+
 }
