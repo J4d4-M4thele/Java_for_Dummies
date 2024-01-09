@@ -1,4 +1,4 @@
-package Book_2.Chapter_5;
+package book2_chap05;
 
 public class ExpressionGang
 {
