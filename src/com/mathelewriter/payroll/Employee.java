@@ -20,7 +20,7 @@ public class Employee {
     /**
      * Represents employee's address
      */
-    public Address address;
+    //public Address address;
 
     /**
      * Creates an employee with the specified name.
@@ -31,11 +31,11 @@ public class Employee {
     public Employee(String lastName, String firstName) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.address = new Address();
+        //this.address = new Address();
     }
 
     /**
-     * @return the lastName
+     * @return the lastName (String data type)
      */
     public String getLastName() {
         return lastName;
@@ -49,7 +49,7 @@ public class Employee {
     }
 
     /**
-     * @return the firstName
+     * @return the firstName (String data type)
      */
     public String getFirstName() {
         return firstName;
@@ -63,7 +63,7 @@ public class Employee {
     }
 
     /**
-     * @return the salary
+     * @return the salary (Double data type)
      */
     public Double getSalary() {
         return salary;
@@ -75,6 +75,12 @@ public class Employee {
     public void setSalary(Double salary) {
         this.salary = salary;
     }
-    
-    
 }
+
+//public class Address implements Clonable {
+//
+//    public String street;
+//    public String city;
+//    public String state;
+//    public String zipCode;
+//}
