@@ -16,7 +16,7 @@ public class Greeter {
 //        System.out.println("Hello World!");
 //    }
   
-//**********ALERTS*********    
+//**********ALERTS********* 
     public void sayHello() {
     JOptionPane.showMessageDialog(null, "Hello World!", "Greeter", JOptionPane.INFORMATION_MESSAGE);
     }

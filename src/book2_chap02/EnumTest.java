@@ -14,7 +14,7 @@ public class EnumTest {
     public static void main(String[] args) {
         CardSuit suit;
         //choosing value
-        suit = CardSuit.DIAMONDS;
+        suit = CardSuit.HEARTS;
         System.out.println("The suit is " + suit);
     }
 }
