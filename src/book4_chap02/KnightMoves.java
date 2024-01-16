@@ -19,7 +19,7 @@ public class KnightMoves {
     {+2, -1}, {+1, -2}, {-1, -2}, {-2, -1}};
 
     public static void main(String[] args) {
-        System.out.println("Welcome tothe Knight Moves Calculator.\n");
+        System.out.println("Welcome to the Knight Moves Calculator.\n");
         do {
             showKnightMoves();
         } while (getYorN("Do it again?"));

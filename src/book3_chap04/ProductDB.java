@@ -15,8 +15,8 @@ public class ProductDB {
     public static Product getProduct() throws ProductDataException {
        try {
             Product p;
-            //p = new Product(50);
-            p = new Product(-50);
+            p = new Product(50);
+            //p = new Product(-50);
 
             return p;
         }catch (ProductDataException e)

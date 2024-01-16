@@ -12,7 +12,7 @@ public class CrazyWithZeros {
 
     public static void main(String[] args) {
         try {
-            int ans = divideNums(15, 3);
+            int ans = divideNums(15, 0);
         } catch (Exception e) {
             System.out.println("Tried twice, still didn't work!");
         }

@@ -24,7 +24,7 @@ class Employee {
 
     private String lastName;
     private String firstName;
-    private Double salary;
+    private double salary;
 
     public Employee(String lastName, String firstName) {
         this.lastName = lastName;
@@ -47,11 +47,11 @@ class Employee {
         this.firstName = firstName;
     }
 
-    public Double getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(Double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 

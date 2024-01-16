@@ -12,7 +12,7 @@ public class TestEquality {
 
     public static void main(String[] args) {
         Employee emp1 = new Employee("Martinez", "Anthony");
-//        Employee emp2 = new Employee("Martinez", "Anthony");
+        //Employee emp2 = new Employee("Martinez", "Anthony");
         Employee emp2 = new Employee("Boyega", "John");
         if (emp1.equals(emp2)) {
             System.out.println("These employees are the same.");
