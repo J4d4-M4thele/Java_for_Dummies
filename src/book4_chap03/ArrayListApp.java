@@ -53,7 +53,7 @@ public class ArrayListApp {
         emps.add(emp1);
         emps.add(emp2);
         emps.add(emp3);
-        
+        emps.remove(2);
         System.out.println(emps);
     }
 }
