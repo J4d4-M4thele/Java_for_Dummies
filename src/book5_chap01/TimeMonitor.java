@@ -9,5 +9,5 @@ package book5_chap01;
  * @author Jada
  */
 public interface TimeMonitor {
-    
+    int getTime();
 }
